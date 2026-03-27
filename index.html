@@ -314,7 +314,7 @@
 // SUBSTITUA pelo ID da sua planilha do Google Sheets
 const SHEET_ID = '1ChxpbDEQkIvHOS3N_3ENcpKRWjNYyu2hFQHgiwlwo6s';
 const DIRECT_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=107461680`;
-const CSV_URL = `https://corsproxy.io/?${encodeURIComponent(DIRECT_URL)}`;
+const CSV_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent(DIRECT_URL)}`;
 
 // Cache de geocodificação para não repetir chamadas
 const geoCache = {};
